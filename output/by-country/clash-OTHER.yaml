@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇪 比利时 (Belgium) 01 - xiaohe
-  server: 141.98.233.6
+- name: 🌐 其他地区 (Other) 01 - xiaohe
+  server: 104.21.91.76
   port: 443
   udp: true
   type: vless
-  uuid: b2593749-691c-428c-9481-14979cba3446
+  uuid: a90c264d-3853-4eef-9a3d-628b2d02d15e
   tls: true
-  servername: xi.tbv.ccwu.cc
+  servername: 7-M19.South-aFRIca-onliNE.CCwu.cC
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /proxyip=us.xiabibi.cf
+    path: /CjBjB9sn5pCvaSwScc
     headers:
-      Host: xi.tbv.ccwu.cc
+      Host: 7-M19.sOuTH-afRiCa-OnlIne.ccwU.cC
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇪 比利时 (Belgium) 01 - xiaohe
+  - 🌐 其他地区 (Other) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇪 比利时 (Belgium) 01 - xiaohe
+  - 🌐 其他地区 (Other) 01 - xiaohe
 rules:
 - MATCH,PROXIES
