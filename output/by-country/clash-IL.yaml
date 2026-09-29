@@ -44,18 +44,31 @@ proxies:
   servername: de2.dzvn.space
   client-fingerprint: firefox
 - name: 🇮🇱 以色列 (Israel) 04 - xiaohe
-  server: 193.169.229.145
+  server: 72.4.65.116
   port: 443
   udp: true
   type: vless
-  uuid: 46b3a70b-b99f-4c6e-aa83-df6d842bb954
-  flow: xtls-rprx-vision
+  uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
   tls: true
-  reality-opts:
-    public-key: 2CwgJn1lc23uxQjAdGphQl4SSRmd1amunSpYXxgCgCM
-    short-id: 7e13fde9
-  servername: isr.vpnskyline.com
+  servername: assets-de2.pleiades.codes
+  skip-cert-verify: false
   client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: cdn.v1.AssetService
+- name: 🇮🇱 以色列 (Israel) 05 - xiaohe
+  server: 72.4.65.116
+  port: 443
+  udp: true
+  type: vless
+  uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
+  tls: true
+  servername: assets-de2.pleiades.codes
+  skip-cert-verify: false
+  client-fingerprint: edge
+  network: grpc
+  grpc-opts:
+    grpc-service-name: cdn.v1.AssetService
 proxy-groups:
 - name: PROXIES
   type: select
@@ -65,6 +78,7 @@ proxy-groups:
   - 🇮🇱 以色列 (Israel) 02 - xiaohe
   - 🇮🇱 以色列 (Israel) 03 - xiaohe
   - 🇮🇱 以色列 (Israel) 04 - xiaohe
+  - 🇮🇱 以色列 (Israel) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -74,5 +88,6 @@ proxy-groups:
   - 🇮🇱 以色列 (Israel) 02 - xiaohe
   - 🇮🇱 以色列 (Israel) 03 - xiaohe
   - 🇮🇱 以色列 (Israel) 04 - xiaohe
+  - 🇮🇱 以色列 (Israel) 05 - xiaohe
 rules:
 - MATCH,PROXIES
