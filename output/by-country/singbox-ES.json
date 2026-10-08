@@ -30,7 +30,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -62,43 +62,17 @@
     {
       "type": "vless",
       "tag": "🇪🇸 西班牙 (Spain) 05 - xiaohe",
-      "server": "46.28.71.247",
+      "server": "assets-es.pleiades.codes",
       "server_port": 443,
-      "uuid": "12c53e32-e589-47d6-b857-e4132294f767",
-      "flow": "xtls-rprx-vision",
+      "uuid": "e0b9fb0f-1bbd-478b-9580-c2294778338b",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE",
-          "short_id": "0dfc23fe80778c00"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 06 - xiaohe",
-      "server": "154.62.226.101",
-      "server_port": 443,
-      "uuid": "5b5e4cbf-2366-499a-8327-0cd9918c687d",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "static.surfweb.club",
-        "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
+        "server_name": "assets-es.pleiades.codes",
+        "insecure": false
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "cdn.v1.AssetService"
       }
     },
     {
@@ -110,8 +84,7 @@
         "🇪🇸 西班牙 (Spain) 02 - xiaohe",
         "🇪🇸 西班牙 (Spain) 03 - xiaohe",
         "🇪🇸 西班牙 (Spain) 04 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 05 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 06 - xiaohe"
+        "🇪🇸 西班牙 (Spain) 05 - xiaohe"
       ]
     },
     {
@@ -122,8 +95,7 @@
         "🇪🇸 西班牙 (Spain) 02 - xiaohe",
         "🇪🇸 西班牙 (Spain) 03 - xiaohe",
         "🇪🇸 西班牙 (Spain) 04 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 05 - xiaohe",
-        "🇪🇸 西班牙 (Spain) 06 - xiaohe"
+        "🇪🇸 西班牙 (Spain) 05 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
